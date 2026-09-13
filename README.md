@@ -1,11 +1,7 @@
 # Testo — AI-Powered Learning & Exam Generation Platform
 
 <p align="center">
-  <img src="docs/screenshots/01_home_screen.png" width="240" alt="Testo Home Screen" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/02_quiz_screen.png" width="240" alt="Testo Quiz Screen" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/03_review_screen.png" width="240" alt="Testo Review Screen" />
+  <img src="docs/screenshots/01_home_screen.png" width="280" alt="Testo App Home Screen" />
 </p>
 
 <p align="center">
@@ -42,16 +38,14 @@ Unlike conventional exam generators that execute slow, quota-exhausting multi-ca
 ## 📱 App Walkthrough & Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/01_home_screen.png" width="250" alt="Home Screen" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/02_quiz_screen.png" width="250" alt="Quiz Screen" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/03_review_screen.png" width="250" alt="Review Screen" />
+  <img src="docs/screenshots/02_quiz_screen.png" width="260" alt="Interactive Quiz Screen" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/screenshots/03_review_screen.png" width="260" alt="In-Depth Review Screen" />
 </p>
 
-| 🏠 1. Home Dashboard | ⏱️ 2. Interactive Timed Quiz | 🎯 3. In-Depth Review & Citations |
-| :--- | :--- | :--- |
-| **Instant Exam Access & Quick Stats**<br>• One-tap document upload (`PDF`, `DOCX`)<br>• Recent exam history & performance overview<br>• Clean Material 3 design system | **Adaptive Exam Experience**<br>• Real-time countdown timer & question navigator<br>• Topic classification & difficulty badges<br>• Offline-first response tracking via SQLite | **Syllabus-Aligned Verification**<br>• Instant feedback on correct/incorrect choices<br>• Detailed pedagogical explanations<br>• **Source page citation** (`Source: Trang 1, Phần 2`) |
+| ⏱️ 1. Interactive Timed Quiz | 🎯 2. In-Depth Review & Citations |
+| :--- | :--- |
+| **Adaptive Exam Experience**<br>• Real-time countdown timer & question navigator<br>• Topic classification & difficulty badges (`Quang hợp`, `easy`)<br>• Offline-first response tracking via SQLite | **Syllabus-Aligned Verification**<br>• Instant feedback on correct/incorrect choices<br>• Detailed pedagogical explanations<br>• **Source page citation** (`Source: Trang 1, Phần 2`) |
 
 ---
 
