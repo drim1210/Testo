@@ -1,7 +1,11 @@
-﻿# Testo — AI-Powered Learning & Exam Generation Platform
+# Testo — AI-Powered Learning & Exam Generation Platform
 
 <p align="center">
-  <img src="docs/screenshots/04_review_screen.png" width="280" alt="Testo App Review Screen" />
+  <img src="docs/screenshots/01_home_screen.png" width="240" alt="Testo Home Screen" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/screenshots/02_quiz_screen.png" width="240" alt="Testo Quiz Screen" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/screenshots/03_review_screen.png" width="240" alt="Testo Review Screen" />
 </p>
 
 <p align="center">
@@ -38,20 +42,16 @@ Unlike conventional exam generators that execute slow, quota-exhausting multi-ca
 ## 📱 App Walkthrough & Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/01_home_screen.png" width="220" alt="Home Screen" />
+  <img src="docs/screenshots/01_home_screen.png" width="250" alt="Home Screen" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/03_generating_screen.png" width="220" alt="Generating Screen" />
+  <img src="docs/screenshots/02_quiz_screen.png" width="250" alt="Quiz Screen" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/04_review_screen.png" width="220" alt="Review Screen" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/02_stats_screen.png" width="220" alt="Stats Screen" />
+  <img src="docs/screenshots/03_review_screen.png" width="250" alt="Review Screen" />
 </p>
 
-1. **Dashboard & Quick Actions**: Overview of recent exams, performance stats, and one-tap document upload.
-2. **Instant Document Processing**: Supports PDF and Word (`.docx`), stripping boilerplate headers, ads, and URLs.
-3. **Adaptive Quiz Engine**: Timed questions, interactive bookmarking, offline auto-saving with SQFlite.
-4. **Deep Review & Citations**: Full explanations for every choice, highlighting correct/incorrect options with citations referencing source pages.
-5. **Topic Analytics Dashboard**: Real-time tracking of strong vs. weak learning topics with progress bars.
+| 🏠 1. Home Dashboard | ⏱️ 2. Interactive Timed Quiz | 🎯 3. In-Depth Review & Citations |
+| :--- | :--- | :--- |
+| **Instant Exam Access & Quick Stats**<br>• One-tap document upload (`PDF`, `DOCX`)<br>• Recent exam history & performance overview<br>• Clean Material 3 design system | **Adaptive Exam Experience**<br>• Real-time countdown timer & question navigator<br>• Topic classification & difficulty badges<br>• Offline-first response tracking via SQLite | **Syllabus-Aligned Verification**<br>• Instant feedback on correct/incorrect choices<br>• Detailed pedagogical explanations<br>• **Source page citation** (`Source: Trang 1, Phần 2`) |
 
 ---
 
