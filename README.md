@@ -38,14 +38,16 @@ Khác với các công cụ tạo đề thông thường thực hiện nhiều v
 ## 📱 Trải nghiệm Ứng dụng & Ảnh chụp Màn hình (App Walkthrough)
 
 <p align="center">
-  <img src="docs/screenshots/02_quiz_screen.png" width="260" alt="Giao diện làm bài thi trắc nghiệm" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/03_review_screen.png" width="260" alt="Giao diện xem lại và trích dẫn tài liệu" />
+  <img src="docs/screenshots/02_generating_screen.png" width="240" alt="Tiến trình AI tạo đề thi" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/screenshots/03_quiz_screen.png" width="240" alt="Giao diện làm bài thi trắc nghiệm" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/screenshots/04_review_screen.png" width="240" alt="Giao diện xem lại và trích dẫn tài liệu" />
 </p>
 
-| ⏱️ 1. Giao diện Thi trắc nghiệm Bấm giờ | 🎯 2. Đánh giá Chi tiết & Trích dẫn Nguồn |
-| :--- | :--- |
-| **Trải nghiệm thi tương tác mượt mà**<br>• Đồng hồ đếm ngược thời gian thực & thanh điều hướng câu hỏi<br>• Tự động phân loại chủ đề & nhãn độ khó (`Quang hợp`, `easy`)<br>• Tự động lưu tiến độ làm bài offline qua SQLite | **Thẩm định chuẩn kiến thức học thuật**<br>• Phản hồi trực quan đáp án đúng / sai tức thì<br>• Giải thích sư phạm cặn kẽ cho từng lựa chọn<br>• **Trích dẫn chính xác trang nguồn** (`Source: Trang 1, Phần 2`) |
+| 🤖 1. Tiến trình AI Tạo Đề thi | ⏱️ 2. Giao diện Thi Bấm giờ | 🎯 3. Đánh giá & Trích dẫn Nguồn |
+| :--- | :--- | :--- |
+| **Pipeline xử lý tài liệu 6 bước trực quan**<br>• Đọc & bóc tách văn bản tài liệu (`DOCX`, `PDF`)<br>• Phân tích ngữ nghĩa & lọc bỏ nhiễu tự động<br>• Trích xuất khái niệm cốt lõi & sinh đề thi<br>• Thẩm định câu hỏi cục bộ theo chuẩn Schema | **Trải nghiệm thi tương tác mượt mà**<br>• Đồng hồ đếm ngược thời gian thực<br>• Điều hướng câu hỏi & đánh dấu bookmark<br>• Phân loại chủ đề & độ khó (`Quang hợp`, `easy`)<br>• Tự động lưu tiến độ làm bài offline qua SQLite | **Thẩm định chuẩn kiến thức học thuật**<br>• Phản hồi trực quan đáp án đúng / sai tức thì<br>• Giải thích sư phạm cặn kẽ cho từng lựa chọn<br>• **Trích dẫn chính xác trang nguồn tài liệu** (`Source: Trang 1, Phần 2`) |
 
 ---
 
