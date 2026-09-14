@@ -18,9 +18,9 @@
 
 ## ⚡ Tổng quan Dự án (Overview)
 
-**Testo** là một nền tảng giáo dục di động chuẩn production, tích hợp AI thông minh giúp chuyển đổi trực tiếp mọi tài liệu học tập (PDF, Word DOCX) thành các bộ đề thi trắc nghiệm bám sát chương trình học chỉ trong **chưa đầy 5 giây**. 
+**Testo** là một nền tảng giáo dục di động chuẩn production, tích hợp AI thông minh giúp chuyển đổi trực tiếp mọi tài liệu học tập (PDF, Word DOCX) thành các bộ đề thi trắc nghiệm bám sát chương trình học một cách tự động, toàn diện và chính xác. 
 
-Khác với các công cụ tạo đề thông thường thực hiện nhiều vòng gọi LLM chậm chạp làm cạn kiệt hạn ngạch API (15–25 round trips mất từ 3–5 phút), Testo áp dụng kỹ thuật **Tối ưu hóa Single-Pass Prompt** kết hợp cùng **Bộ thẩm định Deterministic Validation cục bộ bằng Python**, cung cấp các câu hỏi học thuật chất lượng cao, các phương án nhiễu logic và trích dẫn giải thích nguồn chuẩn xác chỉ với **duy nhất 1 request AI**.
+Khác với các công cụ tạo đề thông thường thực hiện nhiều vòng gọi LLM chậm chạp làm cạn kiệt hạn ngạch API (15–25 round trips làm nghẽn hệ thống), Testo áp dụng kỹ thuật **Tối ưu hóa Single-Pass Prompt** kết hợp cùng **Bộ thẩm định Deterministic Validation cục bộ bằng Python**, cung cấp các câu hỏi học thuật chất lượng cao, các phương án nhiễu logic và trích dẫn giải thích nguồn chuẩn xác chỉ với **duy nhất 1 request AI**.
 
 ---
 
@@ -101,10 +101,10 @@ graph TD
 
 ## 🌟 Điểm sáng Kỹ thuật & Tối ưu hóa (Key Highlights)
 
-### 1. ⚡ Pipeline AI 1-Pass Tốc độ cao (Single-Pass 1-Call)
-* Các giải pháp truyền thống thường chia nhỏ quy trình gọi LLM: 1 lần phân tích nội dung + 1 lần cho từng chương + 1 lần cho mỗi 5 câu hỏi để thẩm định (**tổng cộng 15–25 lần gọi AI**, mất 3–5 phút, dễ chạm ngưỡng rate limit).
-* **Giải pháp của Testo**: Tổng hợp toàn bộ đề thi chỉ trong **đúng 1 request AI** nhờ kỹ thuật ép khuôn định dạng JSON có cấu trúc nghiêm ngặt. Việc kiểm tra cấu trúc (4 lựa chọn không trùng lặp, chỉ số đáp án hợp lệ từ `0..3`, độ dài phần giải thích, thuật toán fuzzy loại bỏ câu trùng lặp) đều được xử lý cục bộ bằng Python (`< 1ms`).
-* **Kết quả**: Thời gian sinh đề giảm từ vài phút xuống còn **~3–5 giây**, tiết kiệm tối đa chi phí và chỉ tiêu hao 1 credit API.
+### 1. ⚡ Tối ưu Pipeline AI 1-Pass (Single-Pass 1-Call Optimization)
+* Các giải pháp truyền thống thường chia nhỏ quy trình gọi LLM: 1 lần phân tích nội dung + 1 lần cho từng chương + 1 lần cho mỗi 5 câu hỏi để thẩm định (**tổng cộng 15–25 lần gọi AI**, kéo dài thời gian và dễ chạm ngưỡng giới hạn quota).
+* **Giải pháp của Testo**: Tổng hợp toàn bộ bộ câu hỏi đề thi chỉ trong **đúng 1 request AI** duy nhất nhờ kỹ thuật ép khuôn định dạng JSON có cấu trúc nghiêm ngặt. Việc kiểm tra cấu trúc (4 lựa chọn không trùng lặp, chỉ số đáp án hợp lệ từ `0..3`, độ dài phần giải thích, thuật toán fuzzy loại bỏ câu trùng lặp) đều được thẩm định cục bộ bằng Python (`< 1ms`).
+* **Kết quả**: Quy trình tạo đề diễn ra trọn vẹn trong khoảng **2–3 phút** cho toàn bộ tài liệu học tập, tiết kiệm tối đa hạn ngạch gọi AI (chỉ tiêu hao 1 credit API) và bảo đảm tính toàn vẹn học thuật.
 
 ### 2. 🛡️ Bộ lọc Nhiễu & Cơ chế Chống Sinh Ảo giác (Anti-Hallucination Guardrails)
 * Tài liệu giáo trình học tập thực tế thường chứa nhiều thông tin phụ: tên tác giả, quảng cáo khóa học, website (`tenschool.vn`), thông báo livestream và hình mờ watermark.

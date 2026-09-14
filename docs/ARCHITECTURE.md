@@ -1,8 +1,8 @@
-﻿# Testo System Architecture & Design Specification
+# Testo System Architecture & Design Specification
 
 ## 1. System Overview
 
-**Testo** is an AI-powered document-to-exam generation and adaptive practice platform. Users upload learning materials (PDF, Word DOCX) and receive a high-quality, syllabus-aligned multiple-choice examination within seconds (~3–5 seconds), complete with detailed explanations, topic classifications, and difficulty ratings.
+**Testo** is an AI-powered document-to-exam generation and adaptive practice platform. Users upload learning materials (PDF, Word DOCX) and receive a high-quality, syllabus-aligned multiple-choice examination, complete with detailed explanations, topic classifications, and difficulty ratings.
 
 ```mermaid
 graph TD
