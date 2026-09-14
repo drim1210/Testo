@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
   <img src="https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
   <img src="https://img.shields.io/badge/Android-APK%20Ready-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <a href="https://youtube.com/shorts/l7mxcJnelcw?feature=share"><img src="https://img.shields.io/badge/YouTube-Video%20Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Architecture-Clean%20%2F%20BLoC-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/FastAPI-Backend%20Engine-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI%20%2F%20Qwen-LLM%20Orchestration-412991?style=for-the-badge" />
@@ -25,8 +26,9 @@ Khác với các công cụ tạo đề thông thường thực hiện nhiều v
 
 ## 📥 Tải xuống & Trải nghiệm Thực tế
 
-| Tài nguyên | Mô tả chi tiết | Liên kết tải về |
+| Tài nguyên | Mô tả chi tiết | Liên kết truy cập |
 | :--- | :--- | :--- |
+| **🎬 Video Demo thực tế** | Trải nghiệm nhanh video quay quá trình tải tài liệu & tạo đề thi trên điện thoại | [▶️ Xem trên YouTube Shorts](https://youtube.com/shorts/l7mxcJnelcw?feature=share) |
 | **Android APK** | Bản phát hành chính thức v1.5.0 (Cài đặt ngay trên Android 8.0+) | [⬇️ Tải file `testo-v1.5.0.apk`](testo-v1.5.0.apk) |
 | **Tài liệu mẫu (Word)** | Tài liệu ôn tập Sinh học với kiến thức tế bào, quang hợp, ADN chuẩn SGK | [📄 Tải file `Tai_Lieu_On_Tap_Sinh_Hoc.docx`](Tai_Lieu_On_Tap_Sinh_Hoc.docx) |
 | **Tài liệu mẫu (PDF)** | Phiên bản PDF tương ứng của tài liệu ôn tập | [📑 Tải file `Tai_Lieu_On_Tap_Sinh_Hoc.pdf`](Tai_Lieu_On_Tap_Sinh_Hoc.pdf) |
@@ -35,7 +37,10 @@ Khác với các công cụ tạo đề thông thường thực hiện nhiều v
 
 ---
 
-## 📱 Trải nghiệm Ứng dụng & Ảnh chụp Màn hình (App Walkthrough)
+## 📱 Trải nghiệm Ứng dụng & Video Demo (App Walkthrough)
+
+> [!TIP]
+> 📺 **Video Demo Thực tế**: Xem trực quan video quay màn hình thao tác app tại: **[🎬 Xem Video Demo trên YouTube Shorts](https://youtube.com/shorts/l7mxcJnelcw?feature=share)**.
 
 <p align="center">
   <img src="docs/screenshots/02_generating_screen.png" width="240" alt="Tiến trình AI tạo đề thi" />
